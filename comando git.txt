@@ -5,8 +5,29 @@ LinconViana
 
 git init (criar repositorio git dentro da pasta do projeto)
 
-git config --global user.name "Lincon Viana"(configurar o git (usuario e senha))
+git config --global user.name "LinconViana"(configurar o git (usuario e senha))
 git config --global user.email "linconviana@gmail.com"
+
+Control L (Limpar tela)
+
+git status
+git add .
+git status
+git commit -m "projeto criado"
+git log
+
+
+Enviar projeto para github
+clicar no gatinho, criar repositorio (nome do projeto)
+
+no terminal colar
+git remote add origin https://github.com/LinconViana/projeto01.git (vincular projeto local com github)
+
+enviar para github
+git push -u origin master
+
+digitar usuario e senha do github
+
 
 
 
