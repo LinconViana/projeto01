@@ -15,7 +15,7 @@ git add .
 git status
 git commit -m "projeto criado"
 git log
-
+git log --oneline
 
 Enviar projeto para github
 clicar no gatinho, criar repositorio (nome do projeto)
