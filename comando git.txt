@@ -1,0 +1,12 @@
+github conta
+linconviana@gmail.com
+L1nc0n14122002*
+LinconViana
+
+git init (criar repositorio git dentro da pasta do projeto)
+
+git config --global user.name "Lincon Viana"(configurar o git (usuario e senha))
+git config --global user.email "linconviana@gmail.com"
+
+
+
