@@ -1,5 +1,7 @@
 package com.linconviana.projeto01.domain;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -18,6 +20,7 @@ public class Categoria implements Serializable {
     private String nome;
 
     //Associação muitos pra muitos
+    @JsonManagedReference // lado onde quero receber os dados Json
     @ManyToMany(mappedBy = "categorias")
     private List<Produto> produtos = new ArrayList<>();
 

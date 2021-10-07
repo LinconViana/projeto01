@@ -1,5 +1,7 @@
 package com.linconviana.projeto01.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -18,6 +20,7 @@ public class Produto implements Serializable {
     private Double preco;
 
     //Associação muito para muitos
+    @JsonBackReference // omitir a lista de categorias.
     @ManyToMany
     @JoinTable(name = "Produto_Categoria",
             joinColumns = @JoinColumn(name = "produto_id"),
